@@ -1,2 +1,3 @@
 # ASCRecyclerviewTraining![Recycler]
-https://user-images.githubusercontent.com/85798876/138279814-0e268643-feac-48c9-9933-fe872bd50353.gif
+
+![Recycler](https://user-images.githubusercontent.com/85798876/138280037-73d0ded8-97d5-4258-b550-71f7acadbf84.gif)
