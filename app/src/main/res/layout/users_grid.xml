@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+
+    android:columnCount="2"
+    android:rowCount="2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:elevation="15dp"
+        app:cardBackgroundColor="#ff8a65"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="10dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrait1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/images"
+                app:civ_border_color="#D0EFC4"
+                app:civ_border_width="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="122dp"
+                android:layout_height="71dp"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="#0C0101"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="________________________"
+                android:textColor="#EDB2B2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_marginTop="3dp"
+        android:animateLayoutChanges="true"
+        android:elevation="15dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#F16868"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="10dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="235dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/textViewTelno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+90"
+                android:textColor="#120404"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="#0E0101"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>
